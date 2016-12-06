@@ -1,0 +1,41 @@
+<div class="item col-lg-3 col-md-4 col-sm-6 col-xs-12" data-ng-repeat="contact in contacts | orderBy:dynamicOrder:order.reverse |filter:contactFilter">
+  <p class="group innner list-group-item-text">
+    <span class="contact-tag">Title:</span> {{contact.title}}
+  </p>
+  <p>
+    <span class="contact-tag innner list-group-item-text">First Name:</span> {{contact.firstName}}
+  </p>
+  <p>
+    <span class="contact-tag innner list-group-item-text">Last Name:</span> {{contact.lastName}}
+  </p>
+  <p>
+    <span class="contact-tag innner list-group-item-text">Address:</span> {{contact.Address1}}
+  </p>
+  <p>
+    <span class="contact-tag innner list-group-item-text">City:</span> {{contact.City}}
+  </p>
+  <p>
+    <span class="contact-tag innner list-group-item-text">Province:</span> {{contact.State}}
+  </p>
+  <div class="editor">
+    <p>
+      <label>Title: </label><input type="text" ng-model="contact.title">
+    </p>
+    <p>
+      <label>First Name: </label><input type="text" ng-model="contact.firstName">
+    </p>
+    <p>
+      <label>Last Name: </label><input type="text" ng-model="contact.lastName">
+    </p>
+    <p>
+      <label>Address: </label><input type="text" ng-model="contact.Address1">
+    </p>
+    <p>
+      <label>City: </label><input type="text" ng-model="contact.City">
+    </p>
+    <p>
+      <label>Province: </label><input type="text" ng-model="contact.State">
+    </p>
+  </div>
+  <a ng-show="true" ng-click="toggleEditor($event)">Open/Close Editor</a>
+</div>

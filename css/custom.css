@@ -1,0 +1,62 @@
+.book-tag{
+    font-weight: bold;
+}
+/*.book-item p{
+  margin: 0;
+  padding: 0;
+}
+.book-item:nth-child(even){
+  background-color: #fff;
+}
+.book-item:nth-child(odd){
+  background-color: #ddd;
+}*/
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0;
+  width: auto;
+}
+.horizontal-collapse {
+  height: 70px;
+}
+.navbar-collapse.in {
+  overflow-y: hidden;
+}
+/*css for the grid to line item switch*/
+.item.list-group-item
+{
+	float: none;
+	width: 100%;
+}
+.item.grid-group-item{
+  width: 25%;
+}
+.editor{
+  display: none;
+}
+.newEntry{
+  display: none;
+}
+
+.item.list-group-item:before,
+.item.list-group-item:after {
+  display: table;
+  content: " ";
+}
+
+.item.list-group-item img{float:left;}
+.item.list-group-item:after
+{
+	clear:both;
+}
+.contactDisplayControls{
+  margin-top: 50px;
+}
+.updateLabel{
+  width: 85px;
+  text-align:right;
+  display: inline-block;
+}

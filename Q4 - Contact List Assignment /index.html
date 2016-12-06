@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Q4 Websystems HTML Assignment</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-touch.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-2.2.0.min.js"></script>
+	<!-- app -->
+	<script src="ContactsApp.js"></script>
+	<!-- services -->
+	<script src="services/contactData.js"></script>
+	<!-- controllers -->
+	<!-- directives -->
+	<!-- styles -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<!-- Header
+Logo (your own design)
+-->
+<!--div ng-controller="CollapseCtrl">
+      <nav class="navbar navbar-default" role="navigation">
+  		  <div class="navbar-header">
+  			  <button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
+  				<span class="sr-only">Toggle navigation</span>
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  			</button>
+  			<a class="navbar-brand" href="#/">Contacts</a>
+  		</div>
+  		<div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
+  			<ul class="nav navbar-nav">
+  				<li><a href="#/">List</a></li>
+  				<li><a href="#/">Grid</a></li>
+  			</ul>
+  		</div>
+  	</nav>
+</div-->
+<div ng-view></div>
+<!-- Navigation 
+- Contact List View ( List or Grid )
+-->
+
+<!-- Page 
+Please make sure to display all contacts in a List view or Grid View ( Optionally add functionality for switching between views)
+List or Grid View should show only First Name Last Name and Phone
+Please place "Add Contact" button which will display a from for adding new contact, form should include 2 buttons save and cancel.
+Save should add the contact to the array of contacts and add to the attached JSON file, and cancel should close the "Add Contact from", and return to list view.
+
+On Click of a contact please display details of a contact with all the available data.
+
+Detail view should have a functionality for editing and deleting the contact. 
+When contact is in edit mode add 2 buttons "Save" and "Cancel"
+- Save button should mimic an Ajax call to the database. No call needs to be made but please make sure the data is available for saving. 
+- Cancel - Close the edit mode and display the detail view of the contact. 
+
+Bonus: Please add filtering to the list of contacts.
+Bonus: Save detail data changes to JSON file.
+
+-->
+
+<!-- Footer
+Copyright [Company Name] 2010. All rights reserved.
+-->
+</body>
+</html>
